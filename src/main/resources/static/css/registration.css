@@ -35,20 +35,20 @@
 }
 
 .signup-form > form input[type="submit"] {
-    background-color: #a1a2dd; /* Цвет фона кнопки отправки */
+    background-color: #818353; /* Цвет фона кнопки отправки */
     color: #fff; /* Цвет текста кнопки отправки */
     cursor: pointer; /* Изменение курсора при наведении */
     width: 100%;
 }
 
 .signup-form > form input[type="submit"]:hover {
-    background-color: #8081d1; /* Цвет фона кнопки отправки при наведении */
+    background-color: #999e58; /* Цвет фона кнопки отправки при наведении */
 }
 
 .signup-form a {
-    color: #a1a2dd;/* Цвет текста ссылки */
+    color: #818353;/* Цвет текста ссылки */
 }
 
 .signup-form a:hover {
-    color: #8081d1; /* Подчеркивание ссылки при наведении */
+    color: #999e58; /* Подчеркивание ссылки при наведении */
 }
