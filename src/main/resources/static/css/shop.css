@@ -39,7 +39,7 @@
 }
 
 .clickButtons .plusMinus, .clickButtons .buyIt {
-    background-color: #a1a2dd; /* Цвет фона кнопки отправки */
+    background-color: #818353; /* Цвет фона кнопки отправки */
     color: #fff; /* Цвет текста кнопки отправки */
     cursor: pointer; /* Изменение курсора при наведении */
     border: none;
@@ -65,7 +65,7 @@
 }
 
 .clickButtons .plusMinus:hover, .clickButtons .buyIt:hover {
-    background-color: #8081d1;
+    background-color: #31534e;
 }
 
 /* Optional: Adjustments for responsiveness */
