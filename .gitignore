@@ -1,9 +1,9 @@
 .gradle
-build/
+#build/
 !gradle/wrapper/gradle-wrapper.jar
 !**/src/main/**/build/
 !**/src/test/**/build/
-
+#!build/libs/optic_shop-1.0-SNAPSHOT.jar
 ### IntelliJ IDEA ###
 .idea/modules.xml
 .idea/jarRepositories.xml
