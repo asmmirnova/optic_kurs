@@ -42,13 +42,13 @@
 }
 
 .signup-form > form input[type="submit"]:hover {
-    background-color: #8081d1; /* Цвет фона кнопки отправки при наведении */
+    background-color: #818353; /* Цвет фона кнопки отправки при наведении */
 }
 
 .signup-form a {
-    color: #a1a2dd;/* Цвет текста ссылки */
+    color: #a8aa6e;/* Цвет текста ссылки */
 }
 
 .signup-form a:hover {
-    color: #8081d1; /* Подчеркивание ссылки при наведении */
+    color: #818353; /* Подчеркивание ссылки при наведении */
 }

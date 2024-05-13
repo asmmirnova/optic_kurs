@@ -39,7 +39,7 @@
 }
 
 .footer-container a:hover {
-    color: #a1a2dd; /* Подчеркивание при наведении на ссылки */
+    color: #818353; /* Подчеркивание при наведении на ссылки */
 }
 
 .footer-container .copyrightText {
@@ -56,7 +56,7 @@
 .footer-line{
     height: 3px;
     width: 100%;
-    background-color: #a1a2dd;
+    background-color: #818353;
 }
 
 
