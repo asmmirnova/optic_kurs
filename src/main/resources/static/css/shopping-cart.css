@@ -1,0 +1,122 @@
+main {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+
+.contactsMenu{
+    padding: 10px;
+    width: 30%;
+    display: flex;
+    flex-flow: column;
+}
+
+.contactsMenu h2{
+    text-align: center;
+}
+
+.itogo {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+}
+
+#text2 {
+    width: 60px;
+    border:none;
+}
+
+/*.shineButton {*/
+/*    width: 40%;*/
+/*    background-color: #efeffb;*/
+/*    border-radius: 10px;*/
+/*    border: none;*/
+/*    padding: 4px;*/
+/*    align-self: center;*/
+/*}*/
+
+/*.shineButton:hover {*/
+/*    background-color: #8081d1;*/
+/*}*/
+.shineButton {
+    display: inline-block;
+    vertical-align: top;
+    padding: 8px 30px;
+
+    border: 3px solid #bf9ef8;
+
+    font-size: 14px;
+    font-weight: 700;
+    color: #bf9ef8;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    transition: background .1s linear, color .1s linear;
+}
+
+.shineButton:hover {
+    background-color: #2a4b4c;
+    color: #a39cac;
+}
+
+.card {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    width: 25%
+}
+
+.topBar{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+}
+
+
+.card {
+    grid-area: card;
+    width: 100%;
+}
+
+.card img {
+    width: 100%;
+    margin-top: 2px;
+}
+
+.disc1 {
+    grid-area: disc1;
+}
+
+.disc2 {
+    grid-area: disc2;
+}
+
+.removeAndPrice {
+    grid-area: removeAndPrice;
+    display: flex;
+    flex-flow: column;
+    align-content: center;
+}
+
+.oneGood {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+                "card disc1 disc2 removeAndPrice";
+    justify-items: center;
+    border: 4px solid #bf9ef8;
+    border: 4px solid #bf9ef8;
+}
+
+.cart {
+    width: 60%;
+}
+
+.card p {
+    text-align:center;
+}
+
+.remove-btn {
+    width: 30px;
+    align-self: center
+}

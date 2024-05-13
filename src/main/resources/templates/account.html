@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Аккаунт</title>
+    <link media="all" rel="stylesheet" th:href="@{/css/header.css}" type="text/css"/>
+    <link media="all" rel="stylesheet" th:href="@{/css/footer.css}" type="text/css"/>
+    <link media="all" rel="stylesheet" th:href="@{/css/account.css}" type="text/css"/>
+
+</head>
+<body>
+<header th:insert="~{blocks/header :: header}"></header>
+
+<div class="cartandcontacts">
+    <section class = "cart">
+        <h1>Все Заказы</h1>
+        <div class = "orders" th:each="order : ${orders}">
+            <div class = "simpleOrder">
+                <div class = "orderDescription">
+                    <h2 th:text="${'Заказ от ' + order.getOrderDate()}" ></h2>
+                    <p class="p1" th:text = "${'Общая стоимость: ' + order.getTotalCost() + ' ₽'}"></p>
+                    <p class="p2" th:text = "${'Статус заказа: ' + order.getStatus()}"></p>
+                </div>
+
+                <div class="orderitems" th:each="prod : ${order.getOrderItems()}">
+                    <div class = "product">
+                        <img th:src="@{'/images/' + ${prod.getProduct().getId()} + '.jpg'}">
+                        <p class="p3"  th:text = "${prod.getProduct().getName()}"></p>
+                        <p class="p4"  th:text = "${'Цена: ' + prod.getProduct().getPrice()  + ' ₽'}"></p>
+                        <p class="p5" th:text = "${'Количество: ' + prod.getQuantity()}"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id = "myContacts" class = "contactsMenu" th:object="${user}">
+        <div class = "userHeader">
+            <h2>Данные пользователя</h2>
+        </div>
+        <div class = "textInput">
+            <p th:text = "${'Имя: ' + user.getUsername()}"></p>
+            <p th:text = "${'Почта: ' + user.getEmail()}"></p>
+        </div>
+        <form action="/logout" method="GET">
+            <button class = "shineButton" type="submit">Выйти</button>
+        </form>
+    </div>
+</div>
+
+<script src = "/js/order-products.js"></script>
+
+<script>
+    window.onload = function () {
+        getNumberOfItems();
+        fillCartItems();
+    };
+</script>
+
+
+<footer th:insert="~{blocks/footer :: footer}"></footer>
+
+</body>
+</html>
