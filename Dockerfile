@@ -6,4 +6,4 @@ COPY . /app
 
 EXPOSE 8082
 
-CMD ["java", "-jar", "/app/build/libs/optic_shop-1.1-SNAPSHOT.jar"]
+CMD ["java", "-jar", "/app/build1/libs/optic_shop-1.1-SNAPSHOT.jar"]
