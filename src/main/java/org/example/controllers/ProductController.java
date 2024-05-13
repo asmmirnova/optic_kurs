@@ -1,6 +1,7 @@
 package org.example.controllers;
 
 import org.example.entities.*;
+import org.example.repositories.OrderRepository;
 import org.example.services.OrderItemService;
 import org.example.services.OrderService;
 import org.example.services.ProductService;
@@ -96,6 +97,7 @@ public class ProductController {
         for (OrderItem orderItem : order.getOrderItems()) {
             orderItem.setOrder(order);
             orderItemService.saveOrderItem(orderItem);
+//            OrderRepository.save(orderItem);
         }
         //orderService.create(order);
         return "redirect:/account";

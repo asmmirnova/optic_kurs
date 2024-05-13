@@ -21,9 +21,9 @@ dependencies {
         implementation 'org.thymeleaf.extras:thymeleaf-extras-springsecurity6:3.1.1.RELEASE'
         testImplementation 'org.springframework.security:spring-security-test'
         testImplementation 'org.springframework.boot:spring-boot-starter-test'
-
+        runtimeOnly 'org.postgresql:postgresql'
         implementation 'org.springframework.data:spring-data-jpa'
-        implementation 'com.mysql:mysql-connector-j:8.3.0'
+//        implementation 'com.mysql:mysql-connector-j:8.3.0'
         implementation 'com.zaxxer:HikariCP:5.0.1'
         implementation 'org.hibernate.orm:hibernate-core:6.4.4.Final'
 

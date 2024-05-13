@@ -108,11 +108,10 @@ public class SecurityConfig {
                         .defaultSuccessUrl("/account")
                         .permitAll()
                 )
-                //.logout((logout) -> logout.permitAll());
+                //.logout((logout) -> logou                        //.logoutRequestMatcher(new AntPathRequestMatcher("/logout", "POST"))t.permitAll());
                 .logout((logout) -> logout
                         .logoutUrl("/logout")
                         .logoutSuccessUrl("/logout-success")
-                        //.logoutRequestMatcher(new AntPathRequestMatcher("/logout", "POST"))
                         .invalidateHttpSession(true)
                         .permitAll()
                 );
